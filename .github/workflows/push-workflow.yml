@@ -1,0 +1,12 @@
+name: Push Trigger Workflow
+
+on:
+  push:
+
+jobs:
+  push-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Push Message
+        run: echo "Code was pushed to the repository!"
